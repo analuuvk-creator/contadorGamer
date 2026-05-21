@@ -11,7 +11,7 @@ import {
 } from "react-native-web";
 
 // Componente principal APP 
-export default function Jogador1() {
+export default function Jogador4() {
 
   // Cria um estado [variável php] chamado "pontos"
   const [pontos, setPontos] = useState(0); // ("pontos" => valor atual | setPontos => função para alterar o valor | 0 => valor inicial
@@ -26,15 +26,14 @@ export default function Jogador1() {
     setPontos(pontos - 1); // Subtrai 1 ponto do valor atual
   }
 
-  // Função para resetar a contagem
-  function resetar() {
-    setPontos(0); // Reseta o valor para 0
-  }
-
   if (pontos < 0) {
     setPontos(0);
   }
 
+  // Função para resetar a contagem
+  function resetar() {
+    setPontos(0); // Reseta o valor para 0
+  }
   return ( // Tudo o que está no RETURN aparece na tela
     <View style={styles.container} /* View principal do app */ > 
       <Text style={styles.titulo} /* Título do app */ > 

@@ -11,7 +11,7 @@ import {
 } from "react-native-web";
 
 // Componente principal APP 
-export default function Jogador1() {
+export default function Jogador3() {
 
   // Cria um estado [variável php] chamado "pontos"
   const [pontos, setPontos] = useState(0); // ("pontos" => valor atual | setPontos => função para alterar o valor | 0 => valor inicial
